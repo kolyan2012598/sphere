@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="view-auth" class="view active">
+        <div class="auth-card">
+            <div class="logo">S</div>
+            <h1>Sphere</h1>
+            <p>Будущее общения уже здесь</p>
+            <div class="auth-form">
+                <div class="input-box"><i class="fa fa-envelope"></i><input type="email" id="email" placeholder="E-mail"></div>
+                <div class="input-box"><i class="fa fa-lock"></i><input type="password" id="pass" placeholder="Пароль"></div>
+                <button id="loginBtn" class="primary-btn">ВОЙТИ</button>
+                <div class="auth-footer">
+                    <span>Нет аккаунта?</span> <button id="toReg">Создать профиль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-main" class="view">
+        <div class="app-container">
+            <header class="top-bar"><h2>Чаты</h2></header>
+            <div id="chat-list" class="scroll-content">
+                <div class="empty">У вас пока нет чатов</div>
+            </div>
+            <nav class="bottom-nav">
+                <button class="nav-item active"><i class="fa-solid fa-message"></i><span>Чаты</span></button>
+                <button class="nav-item"><i class="fa-solid fa-user-group"></i><span>Контакты</span></button>
+                <button class="nav-item"><i class="fa-solid fa-gear"></i><span>Настройки</span></button>
+            </nav>
+        </div>
+    </div>
+
+    <div id="view-chat" class="view">
+        <div class="app-container">
+            <header class="chat-header">
+                <button class="back-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="user-info"><b>@username</b><span>в сети</span></div>
+            </header>
+            <div id="messages" class="scroll-content chat-bg">
+                <div class="msg sent">Привет! Теперь всё ровно.</div>
+            </div>
+            <footer class="chat-footer">
+                <button class="action-btn"><i class="fa-solid fa-plus"></i></button>
+                <div class="input-wrapper"><input type="text" placeholder="Сообщение..."></div>
+                <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </footer>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
